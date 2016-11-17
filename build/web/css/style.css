@@ -1,0 +1,106 @@
+body {
+    background: url('images/background.jpg') fixed;
+    
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.form-holder {
+    background: rgba(255,255,255,0.2);
+    margin-top: 10%;
+    border-radius: 3px;
+}
+  
+.form-head {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 30px #000;
+    margin: 15px auto 30px auto;
+}
+
+.remember-me {
+    text-align: left;
+}
+
+.ui.checkbox label {
+    color: #ddd;
+}
+
+.ui.menu{
+    height: 50px;
+    border-radius: 0px;
+}
+.black{
+    background-color: black;
+}
+.black>a{
+    color: white;
+}
+.ui.menu.inverted{
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+.ui.left.fixed{
+    position: fixed;
+    top: 50px;
+    //max-width: 150px !important;
+    width: inherit;
+}
+.inline-block{
+    display: inline-block !important;
+}
+.width-100{
+    width: 100%;
+}
+.height-100{
+    height: 100%;
+}
+.no-padding{
+    padding: 0px !important;
+}
+.no-margin{
+    margin: 0px !important;
+}
+.min-width-150{
+    min-width: 150px;
+}
+.ui.main{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+}
+.ta-center{
+    text-align: center;
+}
+div.wrapper-login{
+    padding-top: 15%;
+}
+.ui.segment.pad-3em{
+    padding: 3em;
+}
+.wrapper-login{
+    height: 100%;
+    width: 100%;
+}
+.wheat{
+    background-color: whitesmoke;
+}
+.ui.segments.btop{
+    border-top: 5px solid black;
+}
+/*.ui.sidebar { overflow: visible !important; }*/
+
+.padt-50{
+    padding-top: 50px !important;
+}
+
+.over{
+    overflow: scroll;
+}
+/*.zindex-1{
+    z-index: -1;
+}*/

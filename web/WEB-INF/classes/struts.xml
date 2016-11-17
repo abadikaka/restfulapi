@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.multipart.maxSize" value="10000000" />
+    <package name="default" namespace="/" extends="struts-default,json-default">
+        
+        
+        <action name="getJSONResult"
+           class="restful.TakeJSON" method="getJSON">
+             <result type="json">
+                 <param name="noCache">true</param>
+                 <param name="excludeNullProperties">true</param>
+                 <param name="root">arrayBook</param>
+             </result>
+        </action>
+        <!-- Home Action-->
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+ 
+        
+        <!-- index-paginate action -->
+        <action name="pageAction" class="restful.RestfulAPI">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.allowedTypes">application/pdf</param>
+            </interceptor-ref> 
+<!--            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">text/plain,
+            application/pdf,
+            application/word</param>
+            </interceptor-ref>-->
+           <result name="success">/index.jsp</result>
+           <result name="error">/error.jsp</result>
+        </action>
+        
+ 
+    </package>
+ 
+</struts>
